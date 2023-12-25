@@ -15,15 +15,17 @@ h2 {
  justify-content: center;
 }
 
+/* Utilizamos porcentajes para hacer la carta adaptable */
 .birthdayCard {
- position: relative;
- width: 550px;
- height: 350px;
- cursor: pointer;
- transform-style: preserve-3d;
- transform: perspective(2500px);
- transition: 1s;
-}
+    width: 90%; /* El ancho de la carta será el 90% del ancho del viewport */
+    max-width: 600px; /* Establecemos un ancho máximo para mantener el diseño legible */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    margin: 50px auto; /* Centrar la carta horizontalmente con márgenes superior e inferior */
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+  }
 
 .cardFront {
  position: relative;
